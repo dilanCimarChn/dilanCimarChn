@@ -1,0 +1,53 @@
+# Builds the animated assets for the profile README and publishes them to the
+# `output` branch, so `main` only ever contains commits written by hand.
+#   - snake.svg / snake-dark.svg  -> Platane/snk
+#   - stats.svg                   -> GitHub Readme Stats Action (successor of github-readme-stats)
+# Optional: add a repo secret STATS_TOKEN (classic PAT, scopes: repo, read:user)
+# so the stats card can include private contributions. Without it, public only.
+
+name: profile assets
+
+on:
+  schedule:
+    - cron: "17 4 * * *" # daily, 00:17 in La Paz (UTC-4)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/snake.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Contribution snake
+        uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg?palette=github-light
+            dist/snake-dark.svg?palette=github-dark&color_snake=#4FFFB0&color_dots=#0F1520,#0E4D36,#13805A,#2BBF85,#4FFFB0
+
+      - name: Stats card
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=060810&title_color=4FFFB0&text_color=DDE6F0&icon_color=4FFFB0&ring_color=4FFFB0&custom_title=activity
+          path: dist/stats.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
+        with:
+          target_branch: output
+          build_dir: dist
+          jekyll: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
