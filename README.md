@@ -16,6 +16,10 @@ I build the backend side of things: APIs, webhooks, payments and the glue betwee
 Lately most of my time goes into LLM agents and speech-to-text pipelines that have to work in production, not just in a demo.
 Systems engineer from EMI, freelancing from La Paz. You'll usually find me around GDG La Paz or at a hackathon.
 
+<p align="center">
+  <img src="./assets/flow.svg" width="100%" alt="What I build: APIs and webhooks → AI agents and speech → payments and integrations">
+</p>
+
 <p>
   <a href="https://dilancimarchn.github.io"><img src="https://img.shields.io/badge/portfolio-dilancimarchn.github.io-4FFFB0?style=flat-square&labelColor=0F1520" alt="Portfolio"></a>
   <a href="https://www.linkedin.com/in/dilan-cimar-choque-nina-developer"><img src="https://img.shields.io/badge/linkedin-dilan--cimar--choque--nina-4FFFB0?style=flat-square&labelColor=0F1520" alt="LinkedIn"></a>
@@ -23,22 +27,7 @@ Systems engineer from EMI, freelancing from La Paz. You'll usually find me aroun
 </p>
 
 ```text
-$ ls ~/work --featured
-```
-
-| repo | what it is |
-| :--- | :--- |
-| [`ListoPues`](https://github.com/dilanCimarChn/ListoPues) | WhatsApp sales and booking for small businesses: an AI agent closes orders, takes payments and books the calendar. Next.js, Prisma, PostgreSQL. |
-| [`stellar-build`](https://github.com/dilanCimarChn/stellar-build) | Work from the Stellar Élite Bolivia 2026 program, building on Stellar and Soroban. |
-| [`emi_sist`](https://github.com/dilanCimarChn/emi_sist) | Faculty system for the Escuela Militar de Ingeniería, backend and web frontend. |
-<!-- Uncomment each row once the repo is public:
-| [`transcription-showcase`](https://github.com/dilanCimarChn/transcription-showcase) | Speech-to-text pipeline: upload audio, get clean, timestamped transcripts. |
-| [`sabiduria-showcase`](https://github.com/dilanCimarChn/sabiduria-showcase) | SabidurIA: LLM assistant grounded on its own knowledge base. |
-| [`MinerTrace`](https://github.com/dilanCimarChn/MinerTrace) | Traceability for Bolivian gold exports: on-chain records, SHA-256 proofs, QR verification. |
--->
-
-```text
-$ which --all
+$ cat stack.conf
 ```
 
 <a href="https://skillicons.dev">
@@ -49,7 +38,7 @@ $ which --all
 $ git log --stat --author=dilanCimarChn
 ```
 
-<p>
+<p align="center">
   <img src="https://raw.githubusercontent.com/dilanCimarChn/dilanCimarChn/output/stats.svg" height="170" alt="GitHub stats">
   <img src="https://streak-stats.demolab.com?user=dilanCimarChn&theme=dark&hide_border=true&background=060810&ring=4FFFB0&fire=4FFFB0&currStreakLabel=4FFFB0&sideNums=DDE6F0&currStreakNum=DDE6F0&sideLabels=526070&dates=526070&stroke=1A2540&date_format=M%20j%5B%2C%20Y%5D" height="170" alt="Contribution streak">
 </p>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="184" viewBox="0 0 860 184" role="img" aria-labelledby="title desc">
+  <title id="title">From request to real-world action</title>
+  <desc id="desc">Animated flow connecting APIs, AI agents and integrations. Built with Python, powered by curiosity, from La Paz, Bolivia.</desc>
+  <defs>
+    <linearGradient id="line"><stop stop-color="#4FFFB0"/><stop offset="1" stop-color="#69B7FF"/></linearGradient>
+    <path id="route" d="M240 88H338 M522 88H620"/>
+  </defs>
+  <rect x="1" y="1" width="858" height="182" rx="12" fill="#060810" stroke="#1A2540"/>
+  <g font-family="Consolas,Menlo,monospace">
+    <text x="28" y="30" fill="#8093AB" font-size="11" letter-spacing="2">FROM REQUEST TO REAL-WORLD ACTION</text>
+    <use href="#route" stroke="url(#line)" stroke-width="2" fill="none" opacity=".35"/>
+    <path d="M240 88H338 M522 88H620" stroke="#4FFFB0" stroke-width="2" stroke-dasharray="5 13" fill="none">
+      <animate attributeName="stroke-dashoffset" from="36" to="0" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+    <g fill="#0C1420" stroke="#25394C">
+      <rect x="28" y="54" width="212" height="68" rx="8"/>
+      <rect x="338" y="54" width="184" height="68" rx="8"/>
+      <rect x="620" y="54" width="212" height="68" rx="8"/>
+    </g>
+    <g font-size="16" text-anchor="middle" fill="#DDE6F0">
+      <text x="134" y="82">01 / APIs</text>
+      <text x="430" y="82">02 / AI agents</text>
+      <text x="726" y="82">03 / Actions</text>
+    </g>
+    <g font-size="11" text-anchor="middle" fill="#8093AB">
+      <text x="134" y="104">requests &amp; webhooks</text>
+      <text x="430" y="104">LLMs &amp; speech</text>
+      <text x="726" y="104">payments &amp; integrations</text>
+    </g>
+    <circle cx="430" cy="54" r="4" fill="#4FFFB0">
+      <animate attributeName="r" values="3;5;3" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;.4;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="430" y="158" text-anchor="middle" fill="#8093AB" font-size="12">Built with Python. Powered by curiosity. From La Paz, Bolivia.</text>
+  </g>
+</svg>

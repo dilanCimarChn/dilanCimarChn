@@ -7,7 +7,7 @@
 <rect x="0.5" y="0.5" width="859" height="281" rx="10" fill="url(#glow)"/>
 <path d="M10.5 0.5 H849.5 A10 10 0 0 1 859.5 10.5 V34 H0.5 V10.5 A10 10 0 0 1 10.5 0.5 Z" fill="#0A0E18"/>
 <line x1="0.5" y1="34" x2="859.5" y2="34" stroke="#1A2540"/>
-<circle cx="22" cy="17" r="5" fill="#1A2540"/><circle cx="40" cy="17" r="5" fill="#1A2540"/><circle cx="58" cy="17" r="5" fill="#1A2540"/>
+<circle cx="22" cy="17" r="5" fill="#FF5F57"/><circle cx="40" cy="17" r="5" fill="#FEBC2E"/><circle cx="58" cy="17" r="5" fill="#28C840"/>
 <g font-family="'IBM Plex Mono','JetBrains Mono','SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="16">
 <text x="430.0" y="22" fill="#526070" font-size="12" text-anchor="middle">dilan@lapaz: ~ - bash</text>
 <g opacity="0"><set attributeName="opacity" to="1" begin="0.50s" fill="freeze"/>
